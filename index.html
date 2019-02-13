@@ -21,18 +21,23 @@
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-  <style>
+  <!-- <style>
     .img-fluid {
     max-width: 100%;
     height: 370px;
     }   
-    </style>
+    </style> -->
 
   <style>
     .img-fluid {
-    max-width: 100%;
+    max-width: auto;
     height: 370px;
     }   
+
+    img{
+      height: 370px;
+      width: 350px;
+    }
     </style>
 
   <!-- Custom styles for this template -->
@@ -192,12 +197,54 @@
           <div class="portfolio-caption">
             <h4>Project 1</h4>
             <p class="text-muted">Teamwork makes the Dream work!</p>
-            <p>Also, check out my latest project LIRI, link attached!!</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/FriendFinder.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Friend Finder App</h4>
+            <p class="text-muted">Node knows</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/BurgerApp.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Burger App</h4>
+            <p class="text-muted">Hungry Hungry HTTP</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal9">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/Project2.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Project 2</h4>
+            <p class="text-muted">Round 2 Technichal Tussle</p>
           </div>
         </div>
       </div>
     </div>
   </section>
+
 
   <!-- Footer -->
   <footer>
@@ -450,7 +497,7 @@
   </div>
 
   <!-- Modal 7 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -463,16 +510,14 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Team Project 1: Venue 4 You</h2>
-                <p class="item-intro text-muted">Merging/pulling/working as a team!</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/Project1.jpg" alt="">
-                <p>This was my first group project. In this specific project we came together to help people who needed
-                  vacant spaces and venues with spaces to rent find each other. My specific focus on this project was
-                  the firebase. I set up the database, storage and worked up the code for it to work! It was tough and
-                  challenging but very rewarding!</p>
+                <h2 class="text-uppercase">Friend Finder App</h2>
+                <p class="item-intro text-muted">Matching friends and deploying to Heroku</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/FriendFinder.jpg" alt="">
+                <p>This project was a bit difficult to navigate. Building the survey and getting the different routes
+                  per page was a challenging experience. In the end getting it to work was very satisfying.</p>
                 <ul class="list-inline">
-                  <li><a href="https://github.com/zednon/Project1">GitHub Repo</a></li>
-                  <li><a href="https://zednon.github.io/Project1">GitHub Page</a></li>
+                  <li><a href="https://github.com/verna100/FriendFinder">GitHub Repo</a></li>
+                  <li><a href="https://powerful-sierra-70656.herokuapp.com/">Heroku</a></li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -486,7 +531,7 @@
   </div>
 
   <!-- Modal 8 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -499,16 +544,17 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Team Project 1: Venue 4 You</h2>
+                <h2 class="text-uppercase">Eat Da Burgers!</h2>
                 <p class="item-intro text-muted">Merging/pulling/working as a team!</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/Project1.jpg" alt="">
-                <p>This was my first group project. In this specific project we came together to help people who needed
-                  vacant spaces and venues with spaces to rent find each other. My specific focus on this project was
-                  the firebase. I set up the database, storage and worked up the code for it to work! It was tough and
-                  challenging but very rewarding!</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/BurgerApp.jpg" alt="">
+                <p>This app made me hungry but other than that it was great. It was challenging as it took me weeks to
+                  get the api routes routing correctly and that was a nightmare. I started from scratch many times and
+                  finally got it and it made me feel extremely accomplished. I welcome the challenge when something
+                  just makes me think about it non-stop Deploying to Heroku has now gotten smoother after messing with
+                  hamburgers. </p>
                 <ul class="list-inline">
-                  <li><a href="https://github.com/zednon/Project1">GitHub Repo</a></li>
-                  <li><a href="https://zednon.github.io/Project1">GitHub Page</a></li>
+                  <li><a href="https://github.com/verna100/Burger">GitHub Repo</a></li>
+                  <li><a href="https://morning-beyond-63229.herokuapp.com/">Heroku</a></li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -522,7 +568,7 @@
   </div>
 
   <!-- Modal 9 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -542,7 +588,10 @@
                   us. We created a homework slackbot with a corresponding admin page. This allows students to easily
                   type in slash commands with the week's assignment to find out when it's due and get a corresponding
                   zip file of the assignment. The admin page allows TA's to update the assignments seamlessly via
-                  computer or mobile. They can also add or delete assignments from this site.</p>
+                  computer or mobile. They can also add or delete assignments from this site. This project was fun and
+                  challenging as I took on the authentication portion. It's tricky as I first got it up and running
+                  with EJS and mid project realized it didn't work nicely with Handlebars so I had to scrap the use of
+                  EJS altogether and make it work. </p>
                 <ul class="list-inline">
                   <li><a href="https://github.com/ItsGottaBeTheLa/hmwrk">GitHub Repo</a></li>
                   <li><a href="https://pacific-ridge-99694.herokuapp.com/">Heroku App</a></li>
